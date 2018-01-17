@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Яндекс Переговорки - главная</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mobilestyle.css">
+</head>
+<body>
+
+<!-- Шапка -->
+<div class="header__main">
+<div class="header__main-content">
+  <div class="header__logo">
+    <a href="index.html"><img src="assets/logo.svg" alt="Яндекс Переговорки"></a>
+  </div>
+</div>
+</div>
+<!-- Шапка -->
+
+<div class="wrapper">
+	<div id="newMeetingMain">
+		<div id="content">
+			<div id="titleLine">
+				<span id="title">Редактирование встречи</span>
+				<a href="index.html"><span id="close"><img src="assets/close.svg" alt="close_button"></span></a>
+			</div>
+			
+			<div class="newMeetingTable1">
+				<div class="newMeetingRow1">
+					<div class="newMeetingCell cell1">Тема</div>
+					<div class="newMeetingCell cell2">Дата</div>
+					<div class="newMeetingCell cell3">Начало</div>
+					<div class="newMeetingCell cell4"></div>
+					<div class="newMeetingCell cell5">Конец</div>
+				</div>
+				<div class="newMeetingRow2">
+					<div class="newMeetingCell cell6"><input type="text" value="Тестовое задание в ШРИ" placeholder="О чём будете говорить?"></div>
+					<div class="newMeetingCell cell7"><input type="text" value="14 декабря, 2017"></div>
+					<div class="newMeetingCell cell8"><input type="text" placeholder="--:--" value="16:00"></div>
+					<div class="newMeetingCell cell9">—</div>
+					<div class="newMeetingCell cell10"><input type="text" placeholder="--:--" value="16:30"></div>
+				</div>
+			</div>
+
+			<div class="newMeetingTable2">
+				<div class="newMeetingRow1">
+					<div class="newMeetingCell cell1">Участники</div>
+					<div class="newMeetingCell cell2">Ваша переговорка</div>
+				</div>
+				<div class="newMeetingRow2">
+					<div class="newMeetingCell cell11"><input type="text" placeholder="Например, Тор Одинович">
+						<div class="dropdown__Users">
+							<div class="dropdown__Users-line" data-user="Лекс Лютер"><img src="https://avatars3.githubusercontent.com/u/15365?s=460&v=4" alt="avatar">Лекс Лютер  · 7 этаж</div>
+							<div class="dropdown__Users-line" data-user="Томас Андерсон"><img src="https://avatars1.githubusercontent.com/u/3763844?s=400&v=4" alt="avatar">Томас Андерсон · 2 этаж</div>
+							<div class="dropdown__Users-line" data-user="Дарт Вейдер"><img src="https://avatars0.githubusercontent.com/u/1813468?s=460&v=4" alt="avatar">Дарт Вейдер · 1 этаж</div>
+							<div class="dropdown__Users-line" data-user="Кларк Кент"><img src="https://avatars3.githubusercontent.com/u/15365?s=460&v=4" alt="avatar">Кларк Кент · 2 этаж</div>
+							<div class="dropdown__Users-line" data-user="Еще участник"><img src="https://avatars3.githubusercontent.com/u/15365?s=460&v=4" alt="avatar">Еще участник · 2 этаж</div>
+							<div class="dropdown__Users-line" data-user="И еще участник"><img src="https://avatars3.githubusercontent.com/u/15365?s=460&v=4" alt="avatar">И еще участник · 2 этаж</div>
+						</div>
+
+						<div class="selected__Users">
+							<span class="selected__Users-items"><img class="userAvatar" src="https://avatars3.githubusercontent.com/u/15365?s=460&v=4" alt="avatar">Лекс Лютер<img class="closeBtn" src="assets/close.svg" alt="close_button"></span>
+							<span class="selected__Users-items"><img class="userAvatar" src="https://avatars1.githubusercontent.com/u/3763844?s=400&v=4" alt="avatar">Томас Андерсон<img class="closeBtn" src="assets/close.svg" alt="close_button"></span>
+							<span class="selected__Users-items"><img class="userAvatar" src="https://avatars0.githubusercontent.com/u/1813468?s=460&v=4" alt="avatar">Дарт Вейдер<img class="closeBtn" src="assets/close.svg" alt="close_button"></span>
+						</div>
+					</div>
+
+					<div class="newMeetingCell cell12">
+						<div id="room">
+							<span id="roomTime">16:00—16:30</span>
+							<span id="roomFloor">Готем · 4 этаж</span>
+							<img src="assets/close.svg" alt="close_button">
+						</div>
+					
+
+						<div class="recommendedrooms">
+								Рекомендованные переговорки
+								<div class="recommendedrooms__room">
+									<span class="recommendedrooms__room-time">16:00—16:30</span>
+									<span class="recommendedrooms__room-titleANDfloor">Готем · 4 этаж</span>
+								</div>
+								<div class="recommendedrooms__room">
+									<span class="recommendedrooms__room-time">16:00—16:30</span>
+									<span class="recommendedrooms__room-titleANDfloor">Поле непаханное · 4 этаж</span>
+								</div>
+								<div class="recommendedrooms__room">
+									<span class="recommendedrooms__room-time">16:00—16:30</span>
+									<span class="recommendedrooms__room-titleANDfloor">Тёмная башня · 4 этаж</span>
+								</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="footer__wrapper">
+		<div class="footer">
+			<button class="cancel" onclick='location.href="index.html"'>Отмена</button>
+			<button class="delete" onclick="showPopUp()">Удалить встречу</button>
+			<button class="save" onclick='location.href="index.html"'>Сохранить</button>
+		</div>
+	</div>
+</div>
+
+ <!-- Pop-up message Встреча будет удалена -->    
+    <div class="fixed-overlay-delete">
+      <div class="modal">
+          <div class="popupMeetingDelete__main">  
+            <img src="assets/emoji1.png">  
+            <div class="meetingCreated">Встреча будет удалена безвозвратно</div>
+            <button class="cancel" onclick="hidePopUp()">Отмена</button>
+            <button class="delete" onclick='location.href="index.html"'>Удалить</button>
+          </div>
+      </div>
+    </div>    
+    <!-- Pop-up message Встреча создана -->   
+
+	<script type="text/javascript">
+
+		$('.recommendedrooms').style.display = "none";
+
+		// Отображать только выбранную переговорку
+		// При нажатии на крести рядом с выбранной переговоркой отображать список доступных переговорок
+		var recommendedRooms = $All('.recommendedrooms__room');
+		var chosenRoom = $('.newMeetingCell.cell12 > #room');
+
+		for (var i = 0; i < recommendedRooms.length; i++) {
+
+			recommendedRooms[i].onclick = function() {
+				chosenRoom.children[0].innerHTML = this.children[0].innerHTML;
+				chosenRoom.children[1].innerHTML = this.children[1].innerHTML;
+				$('.newMeetingTable2 .newMeetingCell.cell2').innerHTML = "Ваша переговорка";
+				$('.recommendedrooms').style.display = "none";
+				chosenRoom.style.display = "block";
+
+				$('.newMeetingCell.cell8 input').value = this.children[0].innerHTML.split("—")[0];
+				$('.newMeetingCell.cell10 input').value = this.children[0].innerHTML.split("—")[1];
+			}
+
+		}
+
+		$('.cell12 #room > img').onclick = function() {
+			$('.recommendedrooms').style.marginTop = "0";
+			$('.recommendedrooms').childNodes[0].data = "";
+			$('.recommendedrooms').style.display = "block";
+			$('.newMeetingTable2 .newMeetingCell.cell2').innerHTML = "Рекомендованные переговорки";
+			chosenRoom.style.display = "none";
+
+			$('.newMeetingCell.cell8 input').value = "";
+			$('.newMeetingCell.cell10 input').value = "";
+		}
+		// ----------
+
+		//Показать и скрыть всплывающее окно удаления встречи
+		function showPopUp() {
+			$('.fixed-overlay-delete').style.display = "block";
+		}
+		function hidePopUp() {
+			$('.fixed-overlay-delete').style.display = "none";
+		}
+		// ----------
+
+        // Поиск участников при активации текстового поля
+    	var selectedUsersArea = $('.selected__Users');
+    	var dropdownArea = $('.dropdown__Users');
+    	dropdownArea.style.display = "none";
+
+    	var selectedUsers = $All('.selected__Users-items');
+    	// for (var i = 0; i < selectedUsers.length; i++) {
+    	// 	selectedUsers[i].style.display = "none";
+    	// }
+    	for (var i = 0; i < selectedUsers.length; i++) {
+    		selectedUsers[i].children[1].onclick = function() {
+    			this.parentElement.style.display = "none";
+    		}
+    	}
+
+    	var dropdownUsers = $All('.dropdown__Users-line');   	
+    	for (var j = 0; j < dropdownUsers.length; j++) {
+    		dropdownUsers[j].style.display = "none";
+    	}
+
+    	var inputUser = $('.newMeetingCell.cell11 > input');
+    	inputUser.onfocus = function() {
+    		dropdownArea.style.display = "block";
+    		
+    		for (var i = 0; i < dropdownUsers.length; i++) {
+    			if (dropdownUsers[i].innerText.toLowerCase().indexOf(inputUser.value.toLowerCase()) !== -1) {
+    				dropdownUsers[i].style.display = "block";
+    			} else {
+    				dropdownUsers[i].style.display = "none";
+    			}
+    		}
+
+    	}
+
+    	inputUser.onkeyup = function() { 
+    		for (var i = 0; i < dropdownUsers.length; i++) {
+    			if (dropdownUsers[i].innerText.toLowerCase().indexOf(inputUser.value.toLowerCase()) !== -1) {
+    				dropdownUsers[i].style.display = "block";
+    			} else {
+    				dropdownUsers[i].style.display = "none";
+    			}
+    		}
+    	}
+
+    	for (var k = 0; k < dropdownUsers.length; k++) {
+    		dropdownUsers[k].onclick = function() {
+        		var newSelectedUser = document.createElement('span');
+        		// newSelectedUser.innerHTML = this.getAttribute('data-user');
+        		newSelectedUser.classList.add('selected__Users-items');
+
+        		var newSelectedUserLogo = document.createElement('img');
+        		newSelectedUserLogo.classList.add('userAvatar');
+        		newSelectedUserLogo.setAttribute('src', this.children[0].src);
+
+        		var newSelectedUserName = document.createTextNode(this.getAttribute('data-user'));
+
+        		var newSelectedUserCloseBtn = document.createElement('img');
+        		newSelectedUserCloseBtn.classList.add('closeBtn');
+        		newSelectedUserCloseBtn.setAttribute('src', 'assets/close.svg');
+
+        		newSelectedUser.appendChild(newSelectedUserLogo);
+        		newSelectedUser.appendChild(newSelectedUserName);
+        		newSelectedUser.appendChild(newSelectedUserCloseBtn);
+        		selectedUsersArea.appendChild(newSelectedUser);	
+
+        		newSelectedUser.children[1].onclick = function() {
+        			selectedUsersArea.removeChild(this.parentElement);
+        		}
+
+        		dropdownArea.style.display = "none";
+        		inputUser.value = "";
+    		}
+    	}
+
+    	inputUser.onblur = function() { 
+    		setTimeout( 'dropdownArea.style.display = "none"' , 100);
+    	}
+        // ----------
+
+		function $(elem) {
+			return document.querySelector(elem);
+		}
+		function $All(elem) {
+			return document.querySelectorAll(elem);
+		}
+
+	</script>
+</body>
+</html>
